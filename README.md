@@ -50,6 +50,12 @@ https://cdn.example.com/pages/demo/index.html
 | panzoom | 图片 / 图表缩放 | `panzoom.min.js` |
 | prism | 代码高亮 | `components/prism-*.min.js` |
 
+## 页面清单
+
+| 页面 | 路径 | 说明 |
+|------|------|------|
+| 国庆出行 · 沪宁甬 | `pages/guoqing-2026/` | 2026 国庆网友活动行程站（今天 / 行程 / 车票住宿 / 地图 / 须知 / 同行，可按人筛选 `?who=<id>`）。**构建产物，勿手改**：源码在 [Dalwinzzz/trip-planner](https://github.com/Dalwinzzz/trip-planner)，`yarn vite build --base ./` + `python3 scripts/optimize_images.py dist` 后把 `dist/` 整个覆盖到这里 |
+
 ## 上传
 
 - **图片**：PicList 客户端（按分类切换图床配置），或直接 git 提交。
