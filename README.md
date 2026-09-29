@@ -25,7 +25,7 @@ MyImageCdn/
 │   ├── avatars/       头像与图标
 │   └── covers/        封面图
 ├── libs/          前端第三方库（自托管，替代外部 CDN）
-│   ├── docsify/   gsap/   katex/   leaflet/   mermaid/   panzoom/   prism/
+│   ├── docsify/   gsap/   katex/   mermaid/   panzoom/   prism/
 ├── pages/         HTML 静态页 / 单页站点
 ├── docs/          文档（pdf、md…）
 └── files/         其他杂项（zip、附件…）
@@ -48,14 +48,13 @@ https://cdn.example.com/pages/demo/index.html
 | katex | 数学公式渲染 | `katex.min.js`、`docsify-katex.js`、`fonts/*` |
 | gsap | 动画引擎 (v3) | `gsap.min.js`、`ScrollTrigger.min.js` |
 | panzoom | 图片 / 图表缩放 | `panzoom.min.js` |
-| leaflet | 交互地图 (v1.9.4) | `leaflet.js`、`leaflet.css`、`images/*` |
 | prism | 代码高亮 | `components/prism-*.min.js` |
 
 ## 页面清单
 
 | 页面 | 路径 | 说明 |
 |------|------|------|
-| 国庆出行 · 沪宁甬 | `pages/guoqing-2026/index.html` | 2026 国庆行程页（行程 / 车票住宿 / 地图 / 须知），数据在文件内 `TRIP`、`DAYS`、`LEGS`、`STAYS`、`PEOPLE` 几个常量里 |
+| 国庆出行 · 沪宁甬 | `pages/guoqing-2026/` | 2026 国庆网友活动行程站（今天 / 行程 / 车票住宿 / 地图 / 须知 / 同行，可按人筛选 `?who=<id>`）。**构建产物，勿手改**：源码在 [Dalwinzzz/trip-planner](https://github.com/Dalwinzzz/trip-planner)，`yarn vite build --base ./` + `python3 scripts/optimize_images.py dist` 后把 `dist/` 整个覆盖到这里 |
 
 ## 上传
 
